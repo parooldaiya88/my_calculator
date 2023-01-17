@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 62.5%;
+      }
+
+     
+     * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+     
+      font-family: Arial, Helvetica, sans-serif;
+     }
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: column; */
+       
+       
+        width: 100vw;
+        height: 100vh;
+       
+         /* border: 1px solid rgb(68, 0, 255);  */
+      } 
+
+      .result{
+        width: 100%;
+        height: 15vh;
+        color: white;
+        font-size: 6rem;
+        background-color: black;
+       flex-grow: 1;
+       text-align: right;
+       line-height: 15vh;
+       padding-right: 5rem;
+       
+      }
+      .panel{
+      width: 60%;
+      height: 85vh;
+      min-width: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      align-content: space-around;
+     
+
+
+        
+      }
+
+      .panel div:not(.result){
+        /* border: 2px solid white; */
+        /* flex-grow: 1; */
+        height: 10vh;
+        flex-basis: 30%;
+        background-color: cadetblue;
+        color: white;
+        font-size: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       padding: 2rem;
+        transition-duration: 0.2s;
+      }
+      .panel div:nth-child(17),
+      .panel div:nth-child(18) {
+        flex-basis: 45%;
+        /* background-color: red; */
+      }
+
+
+      .panel div:hover{
+        cursor: pointer;
+        background-color: rgb(2, 79, 82);
+      }
+   
+/* 
+   .result{
+   
+    flex-basis:20%;
+    background-color: black;
+   }
+   .panel {
+    display: flex;
+       flex-grow: 1;
+        background-color: cadetblue;
+        flex-wrap: wrap;
+​
+   } 
+    */
+   
+
+  
+      /* 1. calculator has 60% width of body but not less then 500px */
+      /* 2. result has 15vh of height */
+      /* 3. buttons are 10vh heigh */
+      /* 4. panel without display should have 70vh */
+
+      /* keyboard background color rgb(95, 158, 160) */
+      /* hover background color rgb(2, 79, 82)*/
+
+      /* BONUS! */
+      /* use transition-duration 0.2s to add smooth animation while hovering buttons */
+    </style>
+  </head>
+  <body>
+    <!-- DO NOT CHANGE THE HTML STRUCTURE! -->
+    
+    <div class="panel">
+      <div class="result">2 343.99</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>+</div>
+      <div>0</div>
+      <div>-</div>
+      <div>/</div>
+      <div>.</div>
+      <div>*</div>
+      <div>C</div>
+      <div>=</div>
+    </div>
+  </body>
+</html>
